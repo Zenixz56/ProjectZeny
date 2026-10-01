@@ -2,29 +2,102 @@
 #include <windows.h>
 
 
+/*
+1. тип_возврата Имя_Функции(аргументы_функции, ... )
+{
+	тело_функции(код)
+}
+
+*/
+
+
 int main()
 
-{
+{ 
 	SetConsoleCP(CP_UTF8);
 	SetConsoleOutputCP(CP_UTF8);
 	srand(time(NULL));
-
 	
+	 
+	 
+	 
+	  
+	 
+
 	 
 
 
 
 
 
-
-	
 	return 0;
+}
+ 
+
+/*
+
+int Plus(double NumOne, double NumTwo)
+{
+
+	return NumOne + NumTwo;
+}
+int Minus(double NumOne, double NumTwo)
+{
+	return NumOne - NumTwo;
+}
+int Umno(double NumOne, double NumTwo)
+{
+	return NumOne * NumTwo;
+}
+int Del(double NumOne, double NumTwo)
+{
+	return NumOne / NumTwo;
 }
 
 
+
+
+double NumOne = 0;
+	double NumTwo = 0;
+	char Sign = 0;
+	std::cout << "Напишите первое число \n";
+	std::cin >> NumOne;
+	std::cout << "Напишите второе число \n";
+	std::cin >> NumTwo;
+	std::cout << "Напишите действие (+ - * /)\n";
+	std::cin >> Sign;
+	if (Sign == '+')
+	{
+		std::cout << Plus(NumOne, NumTwo);
+
+	}
+	else if (Sign == '-')
+	{
+		std::cout << Minus(NumOne, NumTwo);
+			
+	}
+	else if (Sign == '*')
+	{
+		std::cout << Umno(NumOne, NumTwo);
+
+	}
+	else if (Sign == '/' )
+	{
+		if (NumOne == 0 || NumTwo == 0)
+		{
+			std::cout << "Делить на ноль нельзя";
+			Sleep(1200);
+		}
+		else
+		{
+			std::cout << Del(NumOne, NumTwo);
+		}
 	
-
-
+	}
+	else
+	{
+		std::cout << "Введен некоректный ввод ";
+	}*/	
 
 
 /*
